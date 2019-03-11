@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="image_input_synth_1" LaunchPart="xc7z020iclg400-1L" LaunchTime="1544238972">
+  <File Type="VDS-TIMING-PB" Name="image_input_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="image_input_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="image_input.dcp"/>
+  <File Type="REPORTS-TCL" Name="image_input_reports.tcl"/>
+  <File Type="PA-TCL" Name="image_input.tcl"/>
+  <File Type="RDS-RDS" Name="image_input.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="image_input_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="image_input_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="image_input_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/image_input">
+    <File Path="$PSRCDIR/sources_1/ip/image_input/image_input.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="image_input"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/image_input">
+    <File Path="$PSRCDIR/sources_1/ip/image_input/image_input.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="image_input"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

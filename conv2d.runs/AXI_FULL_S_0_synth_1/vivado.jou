@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  8 11:04:21 2018
+# Process ID: 44758
+# Current directory: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1
+# Command line: vivado -log AXI_FULL_S_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_FULL_S_0.tcl
+# Log file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/AXI_FULL_S_0.vds
+# Journal file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source AXI_FULL_S_0.tcl -notrace

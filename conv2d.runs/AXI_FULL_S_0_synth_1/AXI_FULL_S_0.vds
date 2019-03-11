@@ -1,0 +1,519 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  8 11:04:21 2018
+# Process ID: 44758
+# Current directory: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1
+# Command line: vivado -log AXI_FULL_S_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_FULL_S_0.tcl
+# Log file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/AXI_FULL_S_0.vds
+# Journal file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source AXI_FULL_S_0.tcl -notrace
+Command: synth_design -top AXI_FULL_S_0 -part xc7z020iclg400-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 44766 
+WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:598]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1433.074 ; gain = 93.359 ; free physical = 3795 ; free virtual = 245924
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AXI_FULL_S_0' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/synth/AXI_FULL_S_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AXI_FULL_S_v1_0' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0.v:4]
+	Parameter C_S00_AXI_ID_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S00_AXI_AWUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ARUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_WUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_S00_AXI_RUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_S00_AXI_BUSER_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI_FULL_S_v1_0_S00_AXI' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_ID_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 5 - type: integer 
+	Parameter USER_NUM_MEM bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_FULL_S_v1_0_S00_AXI' (1#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_FULL_S_v1_0' (2#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_FULL_S_0' (3#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/synth/AXI_FULL_S_0.v:56]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWLOCK
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[31]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[30]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[29]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[28]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[27]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[26]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[25]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[24]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[23]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[22]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[21]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[20]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[19]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[18]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[17]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[16]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[15]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[14]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[13]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[12]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[11]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[10]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[9]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[8]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[7]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[6]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[5]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[4]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[7]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[6]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[5]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[4]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_WUSER[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARLOCK
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[3]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[2]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[1]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[0]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[31]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[30]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[29]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[28]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[27]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[26]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[25]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[24]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[23]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[22]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[21]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[20]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[19]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[18]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[17]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[16]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[15]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[14]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[13]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[12]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[11]
+WARNING: [Synth 8-3331] design AXI_FULL_S_v1_0_S00_AXI has unconnected port S_AXI_ARUSER[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1463.332 ; gain = 123.617 ; free physical = 3811 ; free virtual = 245941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1463.332 ; gain = 123.617 ; free physical = 3812 ; free virtual = 245942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1463.332 ; gain = 123.617 ; free physical = 3812 ; free virtual = 245942
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020iclg400-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1841.363 ; gain = 0.000 ; free physical = 3527 ; free virtual = 245656
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:01:01 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3617 ; free virtual = 245747
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020iclg400-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:01:01 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3617 ; free virtual = 245747
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:01 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3620 ; free virtual = 245749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:01:01 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3611 ; free virtual = 245742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 13    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              512 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI_FULL_S_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 13    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              512 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' into 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:238]
+INFO: [Synth 8-4471] merging register 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' into 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:446]
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_awlen_reg was removed.  [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:238]
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_arlen_reg was removed.  [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/hdl/AXI_FULL_S_v1_0_S00_AXI.v:446]
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[0]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[1]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[2]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[3]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[4]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[5]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[6]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_ruser_reg[7]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[0]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[1]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[2]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[3]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[4]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[5]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[6]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[7]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[8]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[9]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[10]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[11]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[12]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[13]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[14]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[15]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[16]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[17]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[18]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[19]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[20]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[21]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[22]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[23]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[24]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[25]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[26]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[27]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[28]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[29]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[30]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module AXI_FULL_S_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_FULL_S_v1_0_S00_AXI_inst/axi_buser_reg[31]) is unused and will be removed from module AXI_FULL_S_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:02 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3599 ; free virtual = 245731
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object                                                                  | Inference | Size (Depth x Width) | Primitives     | 
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:16 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3476 ; free virtual = 245608
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:16 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3476 ; free virtual = 245608
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object                                                                  | Inference | Size (Depth x Width) | Primitives     | 
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
+|AXI_FULL_S_0 | inst/AXI_FULL_S_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | Implied   | 64 x 8               | RAM64X1S x 8   | 
++-------------+-----------------------------------------------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:16 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3474 ; free virtual = 245606
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     8|
+|2     |LUT1     |     5|
+|3     |LUT2     |    48|
+|4     |LUT3     |    17|
+|5     |LUT4     |    41|
+|6     |LUT5     |    20|
+|7     |LUT6     |    29|
+|8     |RAM64X1S |    32|
+|9     |FDRE     |    88|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |   288|
+|2     |  inst                           |AXI_FULL_S_v1_0         |   288|
+|3     |    AXI_FULL_S_v1_0_S00_AXI_inst |AXI_FULL_S_v1_0_S00_AXI |   288|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3475 ; free virtual = 245606
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1841.363 ; gain = 123.617 ; free physical = 3528 ; free virtual = 245660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1841.363 ; gain = 501.648 ; free physical = 3533 ; free virtual = 245665
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:19 . Memory (MB): peak = 1842.371 ; gain = 524.109 ; free physical = 3524 ; free virtual = 245656
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/AXI_FULL_S_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_FULL_S_0/AXI_FULL_S_0.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_FULL_S_0_synth_1/AXI_FULL_S_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_FULL_S_0_utilization_synth.rpt -pb AXI_FULL_S_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1872.387 ; gain = 0.000 ; free physical = 3517 ; free virtual = 245650
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  8 11:05:56 2018...

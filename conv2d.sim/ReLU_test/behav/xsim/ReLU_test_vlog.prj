@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../conv2d.srcs/sources_1/new/ReLU.v" \
+"../../../../conv2d.srcs/sources_1/new/ReLU_kernel.v" \
+"../../../../conv2d.srcs/ReLU_test/new/ReLU_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

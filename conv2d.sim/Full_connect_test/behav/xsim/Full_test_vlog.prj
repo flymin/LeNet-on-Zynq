@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../conv2d.srcs/sources_1/new/FullConnect.v" \
+"../../../../conv2d.srcs/sources_1/new/Multi.v" \
+"../../../../conv2d.srcs/Full_connect_test/new/Full_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

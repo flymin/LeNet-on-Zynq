@@ -1,0 +1,679 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  8 11:16:13 2018
+# Process ID: 47448
+# Current directory: /home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1
+# Command line: vivado -log image_input.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source image_input.tcl
+# Log file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/image_input.vds
+# Journal file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/vivado.jou
+#-----------------------------------------------------------
+source image_input.tcl -notrace
+Command: synth_design -top image_input -part xc7z020iclg400-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 47524 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1425.715 ; gain = 86.000 ; free physical = 2969 ; free virtual = 245135
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'image_input' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/synth/image_input.vhd:97]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: image_input.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.666892 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at '/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/synth/image_input.vhd:289]
+INFO: [Synth 8-256] done synthesizing module 'image_input' (13#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/synth/image_input.vhd:97]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[31]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[30]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[29]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[28]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[27]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[26]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[25]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[24]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[23]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[22]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[21]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[20]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[19]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[18]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[17]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[16]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[15]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[14]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[13]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[12]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTA_I[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEB[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:37 ; elapsed = 00:02:04 . Memory (MB): peak = 1637.867 ; gain = 298.152 ; free physical = 3012 ; free virtual = 245179
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:02:04 . Memory (MB): peak = 1637.867 ; gain = 298.152 ; free physical = 3020 ; free virtual = 245187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:37 ; elapsed = 00:02:04 . Memory (MB): peak = 1637.867 ; gain = 298.152 ; free physical = 3020 ; free virtual = 245187
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020iclg400-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/image_input_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/image_input_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1813.898 ; gain = 0.004 ; free physical = 2751 ; free virtual = 244918
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:00 ; elapsed = 00:02:55 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2832 ; free virtual = 244998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020iclg400-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:00 ; elapsed = 00:02:55 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2832 ; free virtual = 244998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:00 ; elapsed = 00:02:55 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2831 ; free virtual = 244998
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gaxi_full_sm.present_state_reg' in module 'blk_mem_axi_write_fsm'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bready_timeout_c" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'gaxi_full_sm.present_state_reg' in module 'blk_mem_axi_read_fsm'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             wait_wraddr |                               00 |                               00
+                   os_wr |                               01 |                               10
+              reg_wraddr |                               10 |                               01
+                  wr_mem |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gaxi_full_sm.present_state_reg' using encoding 'sequential' in module 'blk_mem_axi_write_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             wait_rdaddr |                               00 |                               00
+                  rd_mem |                               01 |                               11
+              reg_rdaddr |                               10 |                               01
+                   os_rd |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gaxi_full_sm.present_state_reg' using encoding 'sequential' in module 'blk_mem_axi_read_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:00 ; elapsed = 00:02:56 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2831 ; free virtual = 244999
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 5     
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 6     
+	   6 Input      6 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 42    
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module blk_mem_axi_write_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module blk_mem_axi_write_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   6 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module blk_mem_gen_prim_width 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_axi_read_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+Module blk_mem_axi_read_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   6 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[0]' (FDS) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[7]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[8]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[9]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[10]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[7]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[8]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[9]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[10]' (FDRE) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[1]' (FD) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[2]' (FD) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]' (FD) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4]' (FD) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]'
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.num_of_bytes_r_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.num_of_bytes_r_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.num_of_bytes_r_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[1]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[11]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[10]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[9]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[8]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[7]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[6]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxif_ms_addr_gen.next_address_r_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.num_of_bytes_r_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.num_of_bytes_r_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.num_of_bytes_r_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[11]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[10]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[9]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[8]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[7]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[6]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/gaxi_full_sm.gaxifull_mem_slave.next_address_r_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3886] merging instance 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_B_reg' (FD) to 'U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_A_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:58 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2813 ; free virtual = 244986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxi_bid_gen.axi_bid_array_reg | User Attribute | 4 x 4                | RAM32M x 1   | 
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:03:12 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2688 ; free virtual = 244862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:03:13 . Memory (MB): peak = 1813.898 ; gain = 474.184 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/gaxi_bid_gen.axi_bid_array_reg | User Attribute | 4 x 4                | RAM32M x 1   | 
++------------+---------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:12 ; elapsed = 00:03:13 . Memory (MB): peak = 1815.914 ; gain = 476.199 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:12 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:12 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+-----------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+-----------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|blk_mem_gen_v8_4_1 | inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------------+-----------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |    15|
+|3     |LUT3     |    22|
+|4     |LUT4     |    18|
+|5     |LUT5     |    33|
+|6     |LUT6     |   106|
+|7     |RAM32M   |     1|
+|8     |RAMB36E1 |     1|
+|9     |SRL16E   |     1|
+|10    |FDRE     |    94|
+|11    |FDSE     |     9|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+--------------------------+------+
+|      |Instance                               |Module                    |Cells |
++------+---------------------------------------+--------------------------+------+
+|1     |top                                    |                          |   301|
+|2     |  U0                                   |blk_mem_gen_v8_4_1        |   301|
+|3     |    inst_blk_mem_gen                   |blk_mem_gen_v8_4_1_synth  |   301|
+|4     |      \gnbram.gaxibmg.axi_blk_mem_gen  |blk_mem_gen_top           |    15|
+|5     |        \valid.cstr                    |blk_mem_gen_generic_cstr  |    15|
+|6     |          \ramloop[0].ram.r            |blk_mem_gen_prim_width    |    15|
+|7     |            \prim_noinit.ram           |blk_mem_gen_prim_wrapper  |     2|
+|8     |      \gnbram.gaxibmg.axi_rd_sm        |blk_mem_axi_read_wrapper  |   154|
+|9     |        axi_read_fsm                   |blk_mem_axi_read_fsm      |    84|
+|10    |      \gnbram.gaxibmg.axi_wr_fsm       |blk_mem_axi_write_wrapper |   132|
+|11    |        axi_wr_fsm                     |blk_mem_axi_write_fsm     |    48|
++------+---------------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.918 ; gain = 476.203 ; free physical = 2675 ; free virtual = 244848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 149 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:59 ; elapsed = 00:02:33 . Memory (MB): peak = 1815.918 ; gain = 300.172 ; free physical = 2730 ; free virtual = 244904
+Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:03:14 . Memory (MB): peak = 1815.922 ; gain = 476.203 ; free physical = 2737 ; free virtual = 244910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:03:15 . Memory (MB): peak = 1865.938 ; gain = 547.680 ; free physical = 2734 ; free virtual = 244907
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/image_input.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/image_input/image_input.xci
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/image_input_synth_1/image_input.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file image_input_utilization_synth.rpt -pb image_input_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1895.953 ; gain = 0.000 ; free physical = 2731 ; free virtual = 244905
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  8 11:19:44 2018...

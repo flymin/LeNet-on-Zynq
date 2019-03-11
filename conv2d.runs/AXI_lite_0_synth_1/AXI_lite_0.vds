@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  8 11:07:32 2018
+# Process ID: 45717
+# Current directory: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_lite_0_synth_1
+# Command line: vivado -log AXI_lite_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_lite_0.tcl
+# Log file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_lite_0_synth_1/AXI_lite_0.vds
+# Journal file: /home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_lite_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source AXI_lite_0.tcl -notrace
+Command: synth_design -top AXI_lite_0 -part xc7z020iclg400-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 45810 
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI_lite_v1_0_M00_AXI with formal parameter declaration list [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0_M00_AXI.v:120]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1423.066 ; gain = 93.199 ; free physical = 3757 ; free virtual = 245888
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AXI_lite_0' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/synth/AXI_lite_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AXI_lite_v1_0' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0.v:4]
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI_lite_v1_0_M00_AXI' [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0_M00_AXI.v:4]
+	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_TRANSACTIONS_NUM bound to: 10 - type: integer 
+	Parameter TRANS_NUM_BITS bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter INIT_READ bound to: 2'b10 
+	Parameter INIT_COMPARE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0_M00_AXI.v:524]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_lite_v1_0_M00_AXI' (1#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0_M00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_lite_v1_0' (2#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/hdl/AXI_lite_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_lite_0' (3#1) [/home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/synth/AXI_lite_0.v:56]
+WARNING: [Synth 8-3331] design AXI_lite_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design AXI_lite_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1452.324 ; gain = 122.457 ; free physical = 3775 ; free virtual = 245906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1452.324 ; gain = 122.457 ; free physical = 3775 ; free virtual = 245906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020iclg400-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1462.324 ; gain = 132.457 ; free physical = 3775 ; free virtual = 245906
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020iclg400-1L
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'AXI_lite_v1_0_M00_AXI'
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+              INIT_WRITE |                               01 |                               01
+               INIT_READ |                               10 |                               10
+            INIT_COMPARE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'AXI_lite_v1_0_M00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.332 ; gain = 140.465 ; free physical = 3767 ; free virtual = 245898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI_lite_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design AXI_lite_0 has port m00_axi_arprot[0] driven by constant 1
+WARNING: [Synth 8-3331] design AXI_lite_0 has unconnected port m00_axi_bresp[0]
+WARNING: [Synth 8-3331] design AXI_lite_0 has unconnected port m00_axi_rresp[0]
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[5]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[6]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[7]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[8]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[9]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[10]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[11]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[12]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[13]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[14]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[15]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[16]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[17]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[18]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[19]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[20]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[21]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[22]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[23]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[24]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[25]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[26]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[27]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[28]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[29]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst/AXI_lite_v1_0_M00_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst/AXI_lite_v1_0_M00_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[5]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[6]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[7]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[8]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[9]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[10]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[11]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[12]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[13]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[14]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[15]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[16]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[17]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[18]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[19]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[20]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[21]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[22]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[23]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[24]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[25]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[26]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[27]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[28]' (FDRE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[29]' (FDSE) to 'inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\inst/AXI_lite_v1_0_M00_AXI_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\inst/AXI_lite_v1_0_M00_AXI_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[31]) is unused and will be removed from module AXI_lite_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_lite_v1_0_M00_AXI_inst/expected_rdata_reg[30]) is unused and will be removed from module AXI_lite_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[31]) is unused and will be removed from module AXI_lite_0.
+INFO: [Synth 8-3332] Sequential element (inst/AXI_lite_v1_0_M00_AXI_inst/axi_wdata_reg[30]) is unused and will be removed from module AXI_lite_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3642 ; free virtual = 245774
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3643 ; free virtual = 245775
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3641 ; free virtual = 245774
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    21|
+|2     |LUT1   |     7|
+|3     |LUT2   |    12|
+|4     |LUT3   |    15|
+|5     |LUT4   |     5|
+|6     |LUT5   |     5|
+|7     |LUT6   |    11|
+|8     |FDRE   |   101|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      |   177|
+|2     |  inst                         |AXI_lite_v1_0         |   177|
+|3     |    AXI_lite_v1_0_M00_AXI_inst |AXI_lite_v1_0_M00_AXI |   177|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3639 ; free virtual = 245772
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3640 ; free virtual = 245772
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1616.336 ; gain = 286.469 ; free physical = 3641 ; free virtual = 245774
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 1764.355 ; gain = 446.098 ; free physical = 3609 ; free virtual = 245742
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_lite_0_synth_1/AXI_lite_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:37 . Memory (MB): peak = 2275.969 ; gain = 511.613 ; free physical = 3199 ; free virtual = 245344
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/class18/gaoruiyuan/conv2d/conv2d.srcs/sources_1/ip/AXI_lite_0/AXI_lite_0.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/conv2d/conv2d.runs/AXI_lite_0_synth_1/AXI_lite_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_lite_0_utilization_synth.rpt -pb AXI_lite_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2279.969 ; gain = 0.000 ; free physical = 3190 ; free virtual = 245336
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  8 11:09:18 2018...

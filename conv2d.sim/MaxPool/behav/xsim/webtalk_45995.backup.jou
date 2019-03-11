@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Dec  7 15:37:12 2018
+# Process ID: 45995
+# Current directory: /home/class18/gaoruiyuan/conv2d/conv2d.sim/MaxPool/behav/xsim
+# Command line: wbtcv -mode batch -source /home/class18/gaoruiyuan/conv2d/conv2d.sim/MaxPool/behav/xsim/xsim.dir/pool_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/class18/gaoruiyuan/conv2d/conv2d.sim/MaxPool/behav/xsim/webtalk.log
+# Journal file: /home/class18/gaoruiyuan/conv2d/conv2d.sim/MaxPool/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/class18/gaoruiyuan/conv2d/conv2d.sim/MaxPool/behav/xsim/xsim.dir/pool_test_behav/webtalk/xsim_webtalk.tcl -notrace
